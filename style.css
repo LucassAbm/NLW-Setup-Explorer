@@ -1,6 +1,6 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0;  /* Externo */
+  padding: 0;  /* Interno */
   box-sizing: border-box;
 }
 
@@ -8,13 +8,13 @@ body {
   background-color: #09090a;
   color: white;
 
-  height: 100vh;
+  height: 100vh; /* Viewport height */
 }
 
 header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: flex; /* Disposição dos itens, nesse caso lado a lado */
+  align-items: center; /* Alinha horizontalmente */
+  justify-content: space-between; /* Alinha verticalmente */
 
   padding: 48px;
 
@@ -32,7 +32,7 @@ button {
 
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 12px; /* O espaço entre os elementos */
 
   font-family: "Inter";
   font-weight: 600;
@@ -40,14 +40,14 @@ button {
   line-height: 125%;
 }
 
-#form-habits {
+#form-habits { /* #id é único */
   display: flex;
 
-  padding: 182px 48px 48px;
-  width: fit-content;
+  padding: 182px 48px 48px; /* 182px -> Foi visto nas ferramentas de desenvolvedor */
+  width: fit-content; /* Encaixa o conteúdo */
 }
 
-.habits {
+.habits { /* .class */
   margin-top: 60px;
   display: flex;
   flex-direction: column;
@@ -74,11 +74,11 @@ button {
 
 .day {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Ajusta a disposição dos elementos, nesse caso, em colunas */
   gap: 24px;
 }
 
-.day div {
+.day div { /* Pega tudo o que tá dentro da div 'day' */
   margin-bottom: 8px;
 
   font-family: "Roboto Mono";
@@ -91,7 +91,7 @@ button {
 }
 
 input {
-  appearance: none;
+  appearance: none; /* Ajudam a poder mexer melhor no input */
   -webkit-appearance: none;
 
   width: 64px;
@@ -108,8 +108,8 @@ input:checked {
   border: 2px solid #a78bfa;
 }
 
-@media (max-width: 570px) {
+@media (max-width: 570px) { /* Se a interface tiver de 0 até 570px... */
   button div {
-    display: none;
+    display: none; /* Faz sumir o elemento */
   }
 }
